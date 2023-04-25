@@ -1,0 +1,120 @@
+body{
+    background: url(https://freenaturestock.com/wp-content/uploads/freenaturestock-1784-1024x683.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
+}
+#nav-inverse{
+    background: rgba(0, 0, 0, 0.5);
+}
+.logo{
+    height: 30px;
+}
+
+#listbar li{
+    color: #fff;
+    font-size: 19px;
+    margin-right: 35px;
+    padding: 10px 0;
+}
+#listbar li a:hover{
+    color: #00FFB8
+}
+
+#listbar li:hover{
+    border-bottom: 1px solid #00FFB8;
+    padding: 9px 0;
+    cursor: pointer;
+}
+
+#section1{
+    max-width: 1000px;
+}
+#jumbo{
+    background-color: transparent;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 2.5px;
+}
+#icon-section{
+    color: #fff;
+    text-align: center;   
+}
+#icon-section > p{
+    font-size: 20px;
+}
+
+#body-image{
+    height: 30%;
+    transition: height 0.7s;
+}
+
+#body-image:hover{
+    /* width: 50%; */
+    height: 32%;
+}
+
+.contact{
+    text-align: center;
+    margin: 30px 0;
+}
+#button{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px; 
+    border: none;
+    font-size: 20px;
+    padding: 10px 65px;
+    /* padding: 20px 40px; */
+    color: #00FFB8;
+    position: relative;
+    overflow: hidden;
+   
+}
+
+#text{
+    position: relative;
+    z-index: 1;
+     
+}
+
+#button::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 255, 184, 0.5);
+    width: 0;
+    height: 0;
+    left: var(--xPos);
+    top: var(--yPos);
+    transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s;
+    border-radius: 50%;
+}
+
+#button:hover{
+    color: #fff;
+}
+
+#button:hover::before{
+    width: 300px;
+    height: 300px;
+}
+
+.footer{
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    padding: 10px 0;
+    color: grey;
+}
+
+@media (max-width: 768px) {
+    #body-image{
+        /* height: 70px;  */
+        height: 20%;
+    }
+    #body-image:hover{
+       
+        height: 22%;
+    }
+}
